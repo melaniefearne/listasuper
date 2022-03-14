@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>SuperMercado</title>
+</head>
+<body>
+    <br>
+    <br>
+    <div class="container">
+        <div class="form-row">
+            <div class="col" id="divSelects">
+              <input id="productoInput" type="text" class="form-control" placeholder="Producto">
+              <div class="form-inline mb-2 p-0">
+              <select id="selectMarca" class="form-control m-2">
+                <option>Marca</option>
+              </select>
+              <select id="selectPresentacion" class="form-control  m-2">
+                <option>Presentacion</option>
+              </select>
+            </div>
+          </div>
+            <div class="col">
+              <input type="button" onclick="buscar()" class="btn btn-outline-info" value="buscar producto">
+            </div>
+          </div>
+          <div>
+            <div id="productsList"></div>
+          </div>
+          <hr>
+		<div class="row">
+			<div class="col">
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Producto</th>
+							<th>Cantidad</th>
+							<th>Precio minimo</th>
+              <th>Precio maximo</th>
+               <th>Marca</th>
+               <th>Estado</th>
+						</tr>
+					</thead>
+					<tbody id="tbody"></tbody>
+				</table>
+        <div class="bg-secondary border border-secondary d-flex justify-content-around"">
+           <h3 class="text-light">Total</h3>
+           <h4 class="text-light">Max: <p id="totalMax"></p></h4>
+           <h4 class="text-light">Min: <p id="totalMin"></p></h4>
+        </div>
+			</div>
+		</div>
+
+    
+<script src="super.js"></script>
+</body>
+</html>
